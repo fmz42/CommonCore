@@ -116,6 +116,11 @@ Se você quer um `char *reversed;`, precisa atribuir a ele memória válida ante
 
 ---
 
+  char *str;
+  *str = rev_print("Hello, World!");
+  printf ("%s\n", str);
+
+
 Esse código contém um erro porque você está tentando **atribuir o valor retornado pela função `rev_print` a um local de memória que não foi inicializado**. Vamos detalhar o problema e corrigi-lo:
 
 ---
